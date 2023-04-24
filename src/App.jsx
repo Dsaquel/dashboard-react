@@ -1,4 +1,4 @@
-import 'normalize.css'
+import './index.scss'
 import RouterBase from './router/RouterBase'
 
 function App() {

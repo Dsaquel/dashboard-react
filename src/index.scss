@@ -1,0 +1,17 @@
+@import 'normalize.css';
+
+@font-face {
+  font-family: Gilroy;
+  src: url('./assets/Gilroy-Light.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: 1.1rem;
+  font-family: Gilroy;
+}
+
+ul {
+  list-style: none;
+}
