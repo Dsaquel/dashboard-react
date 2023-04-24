@@ -6,6 +6,11 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.layout-no-sidebar {
+  grid-template-areas: 'toolbar toolbar' 'main main' !important;
 }
 
 .main {

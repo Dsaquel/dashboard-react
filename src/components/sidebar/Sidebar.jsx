@@ -20,7 +20,7 @@ const SideBar = () => {
       ],
     },
     {
-      sectionTitle: 'Workspace',
+      sectionTitle: 'General',
       items: [
         { image: 'vite.svg', itemTitle: 'File & Folders' },
         { image: 'vite.svg', itemTitle: 'Settings' },

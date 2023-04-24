@@ -1,4 +1,4 @@
-@import 'normalize.css';
+@import 'normalize.css/normalize.css';
 
 @font-face {
   font-family: Gilroy;
@@ -7,9 +7,16 @@
   font-style: normal;
 }
 
+// *,
+// *:before,
+// *:after {
+//   box-sizing: inherit;
+// }
+
 body {
   font-size: 1.1rem;
   font-family: Gilroy;
+  background: #e5e5e5;
 }
 
 ul {

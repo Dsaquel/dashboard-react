@@ -1,4 +1,32 @@
 .toolbar {
   grid-area: toolbar;
-  background: blue;
+  position: relative;
+
+  .content {
+    padding: 20px 30px;
+
+    .user {
+      margin-left: 10px;
+    }
+  }
+}
+
+.chevron {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  color: #445bff;
+  font-size: 24px;
+  font-weight: 900;
+  left: 0%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-53%, -50%);
+  border: 1px solid #dadada;
+  background: #fff;
 }
