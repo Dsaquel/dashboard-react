@@ -2,19 +2,14 @@
 
 @font-face {
   font-family: Gilroy;
-  src: url('./assets/Gilroy-Light.woff');
+  src: url('./assets/Gilroy-Medium.woff');
   font-weight: normal;
   font-style: normal;
 }
 
-// *,
-// *:before,
-// *:after {
-//   box-sizing: inherit;
-// }
-
 body {
   font-size: 1.1rem;
+  letter-spacing: 1px;
   font-family: Gilroy;
   background: #e5e5e5;
 }

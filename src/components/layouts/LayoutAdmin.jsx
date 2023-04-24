@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
-import SideBar from '../sidebar/Sidebar'
+import SideBar from '../Sidebar/Sidebar'
 import './layoutAdmin.scss'
-import Toolbar from '../toolbar/Toolbar'
+import Toolbar from '../Toolbar/Toolbar'
 import { useState } from 'react'
 const LayoutAdmin = () => {
   const [showSidebar, setShowsidebar] = useState(true)

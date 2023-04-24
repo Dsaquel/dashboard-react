@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './sidebar.scss'
+import Logo from '../Logo/Logo'
 
 const SideBar = () => {
   const [sideBarItems] = useState([
@@ -30,11 +31,7 @@ const SideBar = () => {
 
   return (
     <section className="sidebar">
-      <div className="header align-content">
-        <img src="vite.svg" />
-        <span>name</span>
-      </div>
-
+      <Logo />
       {sideBarItems.map((sideBarItem, sideBarItemIndex) => (
         <ul className="section" key={sideBarItemIndex}>
           <div className="section-title">{sideBarItem.sectionTitle}</div>
@@ -56,7 +53,7 @@ const SideBar = () => {
         <div className="helper">
           <div>?</div>
         </div>
-        <div className='content'>
+        <div className="content">
           Need help with <span className="bold">Dash</span> ?
         </div>
         <button>bonsoir</button>

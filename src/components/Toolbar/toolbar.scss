@@ -2,12 +2,10 @@
   grid-area: toolbar;
   position: relative;
 
-  .content {
-    padding: 20px 30px;
+  padding: 20px 30px;
 
-    .user {
-      margin-left: 10px;
-    }
+  .user {
+    margin-left: 10px;
   }
 }
 
@@ -18,7 +16,7 @@
   color: #445bff;
   font-size: 24px;
   font-weight: 900;
-  left: 0%;
+  left: 0;
   top: 50%;
   width: 40px;
   height: 40px;
