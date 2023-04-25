@@ -1,7 +1,9 @@
 import {
   ChevronBottomIcon,
   ChevronRightIcon,
+  DotIcon,
   LineIcon,
+  SearchBarIcon,
 } from '../../theme/Icons'
 import styles from './toolbar.module.scss'
 import avatarImg from '../../assets/images/avatar.jpg'
@@ -22,6 +24,18 @@ const Toolbar = () => {
           <ChevronBottomIcon />
         </div>
         <LineIcon className={styles.line} />
+        <div className={styles.searchBar}>
+          <SearchBarIcon />
+          <input type="search" placeholder="Search" />
+        </div>
+      </div>
+      <div className={styles.right}>
+        <div className={styles.userStatus}>
+          <DotIcon />
+          ONLINE
+        </div>
+
+        <div></div>
       </div>
     </div>
   )

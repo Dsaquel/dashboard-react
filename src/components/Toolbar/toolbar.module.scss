@@ -4,6 +4,7 @@
   padding: 20px 30px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   .left {
     display: flex;
     align-items: center;
@@ -13,7 +14,6 @@
       cursor: pointer;
       padding: 10px;
       border-radius: 6px;
-      margin-right: 10px;
       transition: all 0.2s ease-out;
       grid-template-columns: 38px 1fr 15px;
       align-items: center;
@@ -45,9 +45,46 @@
     }
 
     .line {
+      margin-right: 20px;
+      margin-left: 10px;
       color: #dadada;
       width: 1px;
       height: 40px;
+    }
+
+    .searchBar {
+      display: flex;
+      align-items: center;
+      svg {
+        height: 18px;
+        width: 18px;
+        margin-right: 10px;
+      }
+      input {
+        transition: all 0.1s ease;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        padding: 10px;
+        &::placeholder {
+          color: #979797;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-content: center;
+    .userStatus {
+      display: flex;
+      align-content: center;
+      color: #30d988;
+      font-size: 0.7rem;
+      svg {
+        width: 7px;
+        margin-right: 5px;
+      }
     }
   }
 }
