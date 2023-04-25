@@ -4,11 +4,11 @@ import './layoutAdmin.scss'
 import Toolbar from '../Toolbar/Toolbar'
 import { useState } from 'react'
 const LayoutAdmin = () => {
-  const [showSidebar, setShowsidebar] = useState(true)
+  const [showSidebar] = useState(true)
 
   return (
     <div className={showSidebar ? 'layout' : 'layout-no-sidebar'}>
-      <Toolbar showSidebar={showSidebar} setShowsidebar={setShowsidebar} />
+      <Toolbar />
       {showSidebar && <SideBar />}
       <div className="main">
         <Outlet />
