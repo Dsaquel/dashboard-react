@@ -1,30 +1,40 @@
 import { useState } from 'react'
 import './sidebar.scss'
 import Logo from '../Logo/Logo'
+import {
+  CalendarIcon,
+  ChatIcon,
+  FolderIcon,
+  GraphIcon,
+  SearchIcon,
+  SettingsIcon,
+  StatIcon,
+  UserIcon,
+} from '../../theme/Icons'
 
 const SideBar = () => {
   const [sideBarItems] = useState([
     {
       sectionTitle: 'main menu',
       items: [
-        { image: 'vite.svg', itemTitle: 'Dashboard' },
-        { image: 'vite.svg', itemTitle: 'Inbox', notificationCount: 1 },
+        { image: StatIcon, itemTitle: 'Dashboard' },
+        { image: ChatIcon, itemTitle: 'Inbox', notificationCount: 1 },
       ],
     },
     {
       sectionTitle: 'Workspace',
       items: [
-        { image: 'vite.svg', itemTitle: 'Accounts' },
-        { image: 'vite.svg', itemTitle: 'Schedule Post' },
-        { image: 'vite.svg', itemTitle: 'Communities' },
-        { image: 'vite.svg', itemTitle: 'Analytics' },
+        { image: UserIcon, itemTitle: 'Accounts' },
+        { image: CalendarIcon, itemTitle: 'Schedule Post' },
+        { image: SearchIcon, itemTitle: 'Communities' },
+        { image: GraphIcon, itemTitle: 'Analytics' },
       ],
     },
     {
       sectionTitle: 'General',
       items: [
-        { image: 'vite.svg', itemTitle: 'File & Folders' },
-        { image: 'vite.svg', itemTitle: 'Settings' },
+        { image: FolderIcon, itemTitle: 'File & Folders' },
+        { image: SettingsIcon, itemTitle: 'Settings' },
       ],
     },
   ])
@@ -38,7 +48,7 @@ const SideBar = () => {
           {sideBarItem.items.map((item, itemIndex) => (
             <li className="item" key={itemIndex}>
               <div className="align-content">
-                <img src={item.image} />
+                <item.image fill="none" />
                 <span>{item.itemTitle}</span>
               </div>
               {item.notificationCount && (

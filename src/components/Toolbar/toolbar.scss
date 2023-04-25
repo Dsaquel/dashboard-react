@@ -10,21 +10,18 @@
 }
 
 .chevron {
-  cursor: pointer;
   position: absolute;
-  z-index: 10;
-  color: #445bff;
-  font-size: 24px;
-  font-weight: 900;
-  left: 0;
-  top: 50%;
   width: 40px;
   height: 40px;
+  border: 1px solid #dadada;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translate(-53%, -50%);
-  border: 1px solid #dadada;
-  background: #fff;
+  background: white;
+  left: 0;
+  transform: translate(-50%, -30%);
+  > svg {
+    width: 10px;
+  }
 }

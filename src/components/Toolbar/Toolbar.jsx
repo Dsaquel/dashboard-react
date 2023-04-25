@@ -1,16 +1,12 @@
-import Logo from '../Logo/Logo'
+import { ChevronRightIcon } from '../../theme/Icons'
 import './toolbar.scss'
 
 const Toolbar = ({ showSidebar, setShowsidebar }) => {
   return (
     <div className="toolbar">
-      {showSidebar ? (
-        <div className="chevron" onClick={() => setShowsidebar(false)}>
-          &#60;
-        </div>
-      ) : (
-        <Logo showSidebar={showSidebar} setShowsidebar={setShowsidebar} />
-      )}
+      <div className="chevron" onClick={() => setShowsidebar(false)}>
+        <ChevronRightIcon />
+      </div>
       <div className="user">{showSidebar}</div>
     </div>
   )
