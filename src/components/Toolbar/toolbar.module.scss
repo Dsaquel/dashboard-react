@@ -40,7 +40,8 @@
         font-weight: 400;
       }
       svg {
-        font-weight: unset;
+        width: 11px;
+        height: 7px;
       }
     }
 
@@ -68,7 +69,7 @@
         padding: 10px;
         &::placeholder {
           color: #979797;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
         }
       }
     }
@@ -79,12 +80,36 @@
     .userStatus {
       display: flex;
       align-content: center;
+      flex-wrap: wrap;
       color: #30d988;
       font-size: 0.7rem;
       svg {
         width: 7px;
         margin-right: 5px;
       }
+    }
+    .multipleUsers {
+      margin-left: 10px;
+      display: flex;
+      align-content: center;
+      img {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid #fff;
+        &:not(.last) {
+          float: right;
+          margin-right: -15px;
+        }
+      }
+    }
+    .line {
+      margin-right: 20px;
+      margin-left: 20px;
+      color: #dadada;
+      width: 1px;
+      height: 40px;
     }
   }
 }

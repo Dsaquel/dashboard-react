@@ -7,6 +7,10 @@ import {
 } from '../../theme/Icons'
 import styles from './toolbar.module.scss'
 import avatarImg from '../../assets/images/avatar.jpg'
+import user0 from '../../assets/images/user0.jpg'
+import user1 from '../../assets/images/user1.jpg'
+import user2 from '../../assets/images/user2.jpg'
+import user3 from '../../assets/images/user3.jpg'
 
 const Toolbar = () => {
   return (
@@ -26,7 +30,7 @@ const Toolbar = () => {
         <LineIcon className={styles.line} />
         <div className={styles.searchBar}>
           <SearchBarIcon />
-          <input type="search" placeholder="Search" />
+          <input type="search" placeholder="Search..." />
         </div>
       </div>
       <div className={styles.right}>
@@ -34,6 +38,14 @@ const Toolbar = () => {
           <DotIcon />
           ONLINE
         </div>
+
+        <div className={styles.multipleUsers}>
+          <img src={user0} style={{ zIndex: 5 }} />
+          <img src={user1} style={{ zIndex: 4 }} />
+          <img src={user2} style={{ zIndex: 3 }} />
+          <img className={styles.last} src={user3} style={{ zIndex: 2 }} />
+        </div>
+        <LineIcon className={styles.line} />
 
         <div></div>
       </div>
