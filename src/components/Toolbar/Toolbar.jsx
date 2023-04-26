@@ -1,4 +1,5 @@
 import {
+  BellDotIcon,
   ChevronBottomIcon,
   ChevronRightIcon,
   DotIcon,
@@ -47,7 +48,7 @@ const Toolbar = () => {
         </div>
         <LineIcon className={styles.line} />
 
-        <div></div>
+        <BellDotIcon className={styles.bell} />
       </div>
     </div>
   )
