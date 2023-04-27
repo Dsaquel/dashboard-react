@@ -17,13 +17,13 @@
 .itemContainer {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
   .itemMain {
     display: flex;
     align-items: center;
     gap: 10px;
     .date {
-      padding: 10px;
+      padding: 5px 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -31,6 +31,7 @@
       border-radius: 4px;
       .month {
         opacity: 0.5;
+        font-size: 0.9rem;
       }
       .number {
         font-weight: 600;
@@ -43,9 +44,10 @@
       white-space: nowrap;
       .itemTitle {
         font-weight: 600;
-        font-size: 0.95rem;
+        font-size: 1rem;
       }
       span {
+        margin-top: 2px;
         font-size: 0.8rem;
         opacity: 0.5;
       }

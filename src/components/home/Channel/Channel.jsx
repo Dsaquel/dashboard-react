@@ -124,11 +124,11 @@ const Channel = () => {
               <div className={stylesChannel.itemContainer}>
                 <div className={stylesChannel.left}>
                   <item.icon />
-                  <div>{item.name}</div>
+                  <div style={{ color: item.color }}>{item.name}</div>
                 </div>
                 <div className={stylesChannel.right}>
                   <div className={stylesChannel['visitors-number']}>
-                    {item.visitorNumber} Visitor
+                    {item.visitorNumber} Visitors
                   </div>
                   <div className={stylesChannel['visitors-pourcent']}>
                     {numberToPourcent(item.visitorNumber)}%
