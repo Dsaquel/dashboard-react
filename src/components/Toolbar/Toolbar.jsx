@@ -1,7 +1,7 @@
 import {
   BellDotIcon,
   ChevronBottomIcon,
-  ChevronRightIcon,
+  ChevronLeftIcon,
   DotIcon,
   LineIcon,
   SearchBarIcon,
@@ -18,7 +18,7 @@ const Toolbar = () => {
     <div className={styles.toolbar}>
       <div className={styles.left}>
         <div className={styles.chevron}>
-          <ChevronRightIcon />
+          <ChevronLeftIcon />
         </div>
         <div className={styles.user}>
           <img src={avatarImg} />

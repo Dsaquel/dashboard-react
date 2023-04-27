@@ -1,0 +1,84 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  span {
+    color: #6f6f6f;
+  }
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  .itemMain {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .date {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid var(--c-grey);
+      border-radius: 4px;
+      .month {
+        opacity: 0.5;
+      }
+      .number {
+        font-weight: 600;
+      }
+    }
+    .itemInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      white-space: nowrap;
+      .itemTitle {
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+      span {
+        font-size: 0.8rem;
+        opacity: 0.5;
+      }
+    }
+  }
+  .itemFooter {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .progress {
+      position: relative;
+      border-radius: 44px;
+      height: 4px;
+      width: 70px;
+      .bg {
+        background: #c4c4c4;
+        position: absolute;
+        height: 4px;
+        width: 70px;
+        opacity: 0.4;
+      }
+      .advance {
+        position: absolute;
+        background: #51cbff;
+        height: 4px;
+        opacity: 1;
+        z-index: 5;
+      }
+    }
+    .progressInfo {
+      font-size: 0.9rem;
+      opacity: 0.5;
+    }
+  }
+}

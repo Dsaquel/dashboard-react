@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid var(--c-grey);
   .left {
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@
       .userInfo {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
         font-size: 0.8rem;
 
         .title {
@@ -41,6 +41,7 @@
         font-weight: 400;
       }
       svg {
+        margin-left: 7px;
         width: 11px;
         height: 7px;
       }
@@ -49,7 +50,7 @@
     .line {
       margin-right: 20px;
       margin-left: 10px;
-      color: #dadada;
+      color: var(--c-grey);
       width: 1px;
       height: 40px;
     }
@@ -70,7 +71,7 @@
         padding: 10px;
         &::placeholder {
           color: #979797;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
         }
       }
     }
@@ -98,7 +99,7 @@
         height: 38px;
         border-radius: 50%;
         cursor: pointer;
-        border: 2px solid #fff;
+        border: 2px solid var(--c-white);
         &:not(.last) {
           float: right;
           margin-right: -15px;
@@ -107,7 +108,7 @@
     }
     .line {
       margin-left: 10px;
-      color: #dadada;
+      color: var(--c-grey);
       width: 1px;
       height: 40px;
     }
@@ -115,8 +116,7 @@
     .bell {
       width: auto;
       height: 24px;
-      background: #fff;
-      padding: 8px;
+      background: var(--c-white);
       border-radius: 50%;
     }
   }
@@ -126,7 +126,7 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  border: 1px solid #dadada;
+  border: 1px solid var(--c-grey);
   border-radius: 50%;
   display: flex;
   align-items: center;

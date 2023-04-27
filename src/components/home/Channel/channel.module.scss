@@ -1,0 +1,71 @@
+.big-stat {
+  display: flex;
+  align-items: center;
+
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .info {
+    display: flex;
+    align-items: stretch;
+    gap: 3px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    svg {
+      height: 14px;
+      width: 9px;
+    }
+    span {
+      opacity: 0.5;
+    }
+  }
+}
+
+.progressContainer {
+  display: flex;
+  width: 100%;
+  height: 10px;
+
+  .progress {
+    height: 10px;
+  }
+
+  .first {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .last {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.itemContainer {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    svg {
+      height: 22px;
+      width: 22px;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .visitors {
+      //
+    }
+  }
+}

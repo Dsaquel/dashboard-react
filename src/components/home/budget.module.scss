@@ -1,0 +1,43 @@
+.item {
+  padding: 10px 20px;
+}
+
+.content {
+  background: var(--c-white);
+  border-radius: 8px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid var(--c-grey);
+    h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #017efa;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      &:hover {
+        text-decoration: underline;
+      }
+      svg {
+        height: 10px;
+      }
+    }
+  }
+}
+
+.divider {
+  border-top: 1px solid var(--c-grey);
+  opacity: 0.5;
+  margin: 0 20px 0 20px;
+}
+
+.spacer {
+  padding-bottom: 30px;
+}

@@ -9,7 +9,7 @@ $blue-hover: #1b2b65;
   padding: 20px 0px 30px 20px;
   justify-content: flex-start;
   background: #081a51;
-  color: #fff;
+  color: var(--c-white);
   letter-spacing: 1px;
   .section {
     padding: 10px 0px 10px 10px;
@@ -67,7 +67,7 @@ $blue-hover: #1b2b65;
       top: -15%;
       border-radius: 50%;
       background: #aabbfa;
-      padding: 5px;
+      padding: 19px 5px;
       height: 32px;
       & > div {
         user-select: none;
@@ -80,7 +80,7 @@ $blue-hover: #1b2b65;
       margin-top: 20px;
     }
     button {
-      color: #fff;
+      color: var(--c-white);
       padding: 12px;
       border: 0;
       border-radius: 6px;

@@ -7,6 +7,21 @@
   font-style: normal;
 }
 
+:root {
+  --c-white: #fff;
+  --c-grey: #dadada;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-size: 1rem;
   font-family: Gilroy;
