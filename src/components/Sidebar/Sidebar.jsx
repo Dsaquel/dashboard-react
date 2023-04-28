@@ -41,24 +41,25 @@ const SideBar = () => {
 
   return (
     <section className="sidebar">
-      <Logo />
-      {sideBarItems.map((sideBarItem, sideBarItemIndex) => (
-        <ul className="section" key={sideBarItemIndex}>
-          <div className="section-title">{sideBarItem.sectionTitle}</div>
-          {sideBarItem.items.map((item, itemIndex) => (
-            <li className="item" key={itemIndex}>
-              <div className="align-content">
-                <item.image fill="none" />
-                <span>{item.itemTitle}</span>
-              </div>
-              {item.notificationCount && (
-                <div className="notification">{item.notificationCount}</div>
-              )}
-            </li>
-          ))}
-        </ul>
-      ))}
-
+      <div className="top">
+        <Logo />
+        {sideBarItems.map((sideBarItem, sideBarItemIndex) => (
+          <ul className="section" key={sideBarItemIndex}>
+            <div className="section-title">{sideBarItem.sectionTitle}</div>
+            {sideBarItem.items.map((item, itemIndex) => (
+              <li className="item" key={itemIndex}>
+                <div className="align-content">
+                  <item.image fill="none" />
+                  <span>{item.itemTitle}</span>
+                </div>
+                {item.notificationCount && (
+                  <div className="notification">{item.notificationCount}</div>
+                )}
+              </li>
+            ))}
+          </ul>
+        ))}
+      </div>
       <div className="footer">
         <div className="helper">
           <div>?</div>

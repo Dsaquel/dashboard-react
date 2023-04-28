@@ -1,0 +1,58 @@
+.apexcharts-tooltip {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px #e3e5f3;
+  z-index: 10000;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1c1f37;
+  opacity: 0.7;
+  align-items: flex-start;
+}
+
+.tooltip {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  width: 100%;
+  .item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 5px;
+    span {
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .first {
+      color: #fd1f9b;
+    }
+    .equal {
+      opacity: 0.7;
+    }
+    .last {
+      color: #017efa;
+    }
+    .mean {
+      opacity: 0.7;
+    }
+  }
+}
+
+.apexcharts-xaxistooltip-bottom {
+  color: #254bd1 !important;
+  background: #f8f9ff !important;
+  border: none !important;
+  margin-top: 4px;
+  font-weight: 700;
+  &:before {
+    content: unset !important;
+  }
+  &:after {
+    content: unset !important;
+  }
+}
+
+

@@ -5,9 +5,8 @@ $blue-hover: #1b2b65;
   grid-area: sidebar;
   display: flex;
   flex-direction: column;
-  gap: 50px;
   padding: 20px 0px 30px 20px;
-  justify-content: flex-start;
+  justify-content: space-between;
   background: #081a51;
   color: var(--c-white);
   letter-spacing: 1px;
@@ -48,6 +47,7 @@ $blue-hover: #1b2b65;
   }
 
   .footer {
+    margin-bottom: 40px;
     position: relative;
     display: flex;
     flex-direction: column;
